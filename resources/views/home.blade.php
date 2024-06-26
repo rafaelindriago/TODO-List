@@ -6,6 +6,7 @@
             <div class="col">
                 <section class="card">
                     <h5 class="card-header">
+                        <span class="bi bi-journals text-muted"></span>
                         {{ __('My To-Do List.') }}
                     </h5>
 
