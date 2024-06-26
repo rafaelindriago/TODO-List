@@ -4,8 +4,10 @@
     <div class="container">
         <div class="row justify-content-center">
             <div class="col">
-                <div class="card">
-                    <div class="card-header">{{ __('Dashboard') }}</div>
+                <section class="card">
+                    <h5 class="card-header">
+                        {{ __('My To-Do List.') }}
+                    </h5>
 
                     <div class="card-body">
                         @if (session('status'))
@@ -14,10 +16,8 @@
                                 {{ session('status') }}
                             </div>
                         @endif
-
-                        {{ __('You are logged in!') }}
                     </div>
-                </div>
+                </section>
             </div>
         </div>
     </div>
