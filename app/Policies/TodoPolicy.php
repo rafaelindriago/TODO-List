@@ -12,7 +12,7 @@ class TodoPolicy
      */
     public function viewAny(User $user): ?bool
     {
-        return null;
+        return true;
     }
 
     /**
@@ -28,7 +28,7 @@ class TodoPolicy
      */
     public function create(User $user): ?bool
     {
-        return null;
+        return true;
     }
 
     /**
