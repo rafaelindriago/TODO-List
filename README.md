@@ -31,7 +31,11 @@ Generate a key for your app copy.
 
     php artisan key:generate
 
-If you wish, you can run all the test.
+If you wish, you can run all the test, but you need to install the development dependencies with Composer.
+
+    composer install 
+
+And then.
 
     php artisan test
 
@@ -59,9 +63,7 @@ For testing with PostMan, you can use the published Collection and Environment t
 ## Database schema 🔑
 
 To get a database diagram.
-
 [To-Do List - dbdocs.io](https://dbdocs.io/rafael.indriago93/To-Do-List)
-
 
 
 > Written with [StackEdit](https://stackedit.io/).
