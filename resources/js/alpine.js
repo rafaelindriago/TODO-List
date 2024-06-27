@@ -20,6 +20,10 @@ Alpine.data('todoList', () => ({
 
     init() {
         this.fetchIndex()
+
+        window.setInterval(
+            () => this.fetchIndex(), 300000
+        )
     },
 
     fetchIndex() {
