@@ -11,11 +11,19 @@ class Todo extends Model
 {
     use HasFactory, HasUuids;
 
+    /**
+     * The attributes that are mass assignable.
+     *
+     * @var array<int, string>
+     */
     protected $fillable = [
         'title',
         'description',
     ];
 
+    /**
+     * Get the User of the Todo.
+     */
     public function user(): BelongsTo
     {
         return $this->belongsTo(User::class);
