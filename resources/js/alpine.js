@@ -85,7 +85,7 @@ Alpine.data('todoList', () => ({
 
         document.documentElement.scrollIntoView({ behavior: 'smooth' });
 
-        this.fetchIndex()
+        this.fetchPage(1)
     },
 }));
 
