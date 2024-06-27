@@ -81,7 +81,7 @@
                                        aria-haspopup="true"
                                        aria-expanded="false"
                                        v-pre>
-                                        <span class="bi bi-person text-muted"></span>
+                                        <span class="bi bi-person text-primary"></span>
                                         {{ Auth::user()->name }}
                                     </a>
 
