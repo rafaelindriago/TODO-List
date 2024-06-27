@@ -71,7 +71,7 @@
                                     <small class="text-muted">
                                         <span class="bi bi-clock"></span>
 
-                                        <span x-text="item.created_at"></span>
+                                        <span x-text="item.diffForHumans"></span>
                                     </small>
                                 </div>
 
