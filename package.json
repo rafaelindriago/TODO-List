@@ -7,15 +7,15 @@
     },
     "devDependencies": {
         "@popperjs/core": "^2.11.6",
-        "axios": "^1.6.4",
-        "bootstrap": "^5.2.3",
         "laravel-vite-plugin": "^1.0",
         "sass": "^1.56.1",
         "vite": "^5.0"
     },
     "dependencies": {
+        "axios": "^1.6.4",
         "@fontsource/roboto": "^5.0.13",
-        "alpinejs": "^3.14.1",
-        "bootstrap-icons": "^1.11.3"
+        "bootstrap": "^5.2.3",
+        "bootstrap-icons": "^1.11.3",
+        "alpinejs": "^3.14.1"
     }
 }
