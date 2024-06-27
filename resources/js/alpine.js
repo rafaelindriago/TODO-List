@@ -40,7 +40,9 @@ Alpine.data('todoList', () => ({
     fetchPage(page) {
         this.currentPage = page
 
-        document.documentElement.scrollIntoView({ behavior: 'smooth' });
+        document.documentElement.scrollIntoView({
+            behavior: 'smooth'
+        });
 
         this.fetchIndex()
     },
@@ -57,14 +59,22 @@ Alpine.data('todoList', () => ({
     save() {
         if (this.attributes.id.length == 0) {
             axios.post('/todos', this.attributes)
+                .then(() => {
+                    document.documentElement.scrollIntoView({
+                        behavior: 'smooth'
+                    })
+                })
         } else {
             axios.patch(`/todos/${this.attributes.id}`, this.attributes)
+                .then(() => {
+                    document.documentElement.scrollIntoView({
+                        behavior: 'smooth'
+                    })
+                })
         }
 
         Modal.getInstance(document.querySelector('#todoFormModal'))
             .hide()
-
-        document.documentElement.scrollIntoView({ behavior: 'smooth' });
 
         this.fetchIndex()
     },
@@ -79,11 +89,14 @@ Alpine.data('todoList', () => ({
 
     destroy(id) {
         axios.delete(`/todos/${id}`)
+            .then(() => {
+                document.documentElement.scrollIntoView({
+                    behavior: 'smooth'
+                })
+            })
 
         Modal.getInstance(document.querySelector('#todoDeleteModal'))
             .hide()
-
-        document.documentElement.scrollIntoView({ behavior: 'smooth' });
 
         this.fetchPage(1)
     },
