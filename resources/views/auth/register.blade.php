@@ -5,10 +5,10 @@
         <div class="row justify-content-center">
             <div class="col">
                 <div class="card">
-                    <div class="card-header">
+                    <h5 class="card-header">
                         <span class="bi bi-person-plus text-muted"></span>
                         {{ __('Register') }}
-                    </div>
+                    </h5>
 
                     <div class="card-body">
                         <form method="POST"
