@@ -29,7 +29,7 @@ class TodoController extends Controller
         $todos = Todo::query()
             ->latest()
             ->whereBelongsTo(Auth::user())
-            ->paginate(10);
+            ->paginate(5);
 
         return TodoResourceCollection::make($todos);
     }
