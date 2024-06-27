@@ -55,6 +55,13 @@ Now the app is ready to run.
 
     php artisan serve
 
+## Language 🌎
+
+The app support English and Spanish, you can setup the language in your `.env` file with the option `APP_LOCALE`
+
+ - en
+ - es
+
 ## Testing 🧪
 For testing with PostMan, you can use the published Collection and Environment to make requests to the app.
 
