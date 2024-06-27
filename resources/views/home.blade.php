@@ -103,7 +103,7 @@
                             <section class="card mb-3">
                                 <h5 class="card-header text-muted text-center">
                                     <span class="bi bi-journal-x"></span>
-                                    {{ __('Ooops!') }}
+                                    {{ __('Whoops!') }}
                                 </h5>
 
                                 <div class="card-body text-muted text-center">
