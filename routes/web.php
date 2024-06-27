@@ -6,7 +6,10 @@ use Illuminate\Support\Facades\Route;
 
 Route::redirect('/', '/home');
 
-Auth::routes();
+Auth::routes([
+    'reset' => false,
+    'confirm' => false,
+]);
 
 Route::view('/home', 'home')
     ->name('home')
